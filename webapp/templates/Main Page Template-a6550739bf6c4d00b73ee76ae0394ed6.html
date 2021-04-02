@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Structr + TailwindCSS Example</title>
+		<link rel="stylesheet" href="/css/tailwind.2.0.3.css">
+		<link rel="stylesheet" href="/css/custom.css">
+		
+		${include_child('page-css')}
+	</head>
+
+	<body class="font-sans antialiased text-gray-900 min-h-screen">
+		
+		<div class="flex min-h-full">
+
+			${include('Main Menu Left')}
+
+			<div class="py-10 flex-1 bg-gray-100">
+				<main>
+					<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+						${include_child('page-content')}
+					</div>
+				</main>
+			</div>
+			
+			${include('Default Footer')}
+
+		</div>
+		
+		${include_child('page-js')}
+		
+		<script type="text/javascript" src="/js/global-scripts.js"></script>
+	</body>
+</html>

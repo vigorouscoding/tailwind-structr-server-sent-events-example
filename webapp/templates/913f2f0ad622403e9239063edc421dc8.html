@@ -1,0 +1,13 @@
+${
+	is(
+		or(
+			eq(size(find('Actor')), 0),
+			eq(size(find('Movie')), 0),
+			eq(size(find('Genre')), 0)
+		),
+		(
+			store('missing-data', true),
+			include_child('DATA_IS_MISSING')
+		)
+	)
+}

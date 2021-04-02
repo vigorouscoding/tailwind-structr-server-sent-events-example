@@ -1,0 +1,15 @@
+<div class="mt-6 mb-24">
+
+	<h1 class="text-3xl mb-6">Data Missing</h1>
+	
+	${
+		if(
+			or(
+				empty(me),
+				not(me.isAdmin)
+			),
+			include_child('IMPORT_NOT_POSSIBLE'),
+			include_child('GO_TO_DATA')
+		)
+	}
+</div>

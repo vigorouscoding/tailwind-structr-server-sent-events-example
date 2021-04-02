@@ -1,0 +1,38 @@
+<div class="flex flex-col sm:flex-row sm:items-end sm:justify-between mt-6">
+	<span class="text-sm font-semibold">1-4 of ${size(find('Movie'))} Movies</span>
+</div>
+
+<div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl">
+
+	${{
+	
+		// customize PAGINATION component (included below)
+		$.requestStore['PAGINATION_PARAMETER_PAGE']     = 'page';
+		$.requestStore['PAGINATION_PARAMETER_PAGESIZE'] = 'pageSize';
+	
+		$.requestStore['PAGINATION_MAX_PAGESIZE']       = 8;
+		$.requestStore['PAGINATION_DEFAULT_PAGESIZE']   = 4;
+	
+		$.requestStore['PAGINATION_MAX_ITEMS']          = $.find('Movie').length;
+		$.requestStore['PAGINATION_PAGES_AROUND']       = 2;
+		$.requestStore['PAGINATION_PAGE_PATH']          = '/movies?';
+
+
+		// let pagination take care of setting the correct page/pagesize (including sanity checks)
+		$.include('PAGINATION_CONFIG');
+
+		// get the results so we can query the database
+		let page     = $.requestStore['PAGINATION_CUR_PAGE'];
+		let pageSize = $.requestStore['PAGINATION_CUR_PAGESIZE'];
+	
+		let movies = $.find('Movie', $.predicate.sort('imdbRating', true), $.predicate.page(page, pageSize));
+
+		$.include('MOVIE_TILE', movies, 'movie');
+	}}
+	
+</div>
+<!-- Component End  -->
+
+<!-- Begin Markup for Pagination  -->
+${include('PAGINATION_MARKUP')}
+<!-- End Markup for Pagination  -->

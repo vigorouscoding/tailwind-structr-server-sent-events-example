@@ -1,0 +1,50 @@
+<h1 class="text-3xl mb-6">Actors (paginated)</h1>
+
+${include('DATA_CHECK')}
+
+<div class="flex flex-col justify-center">
+
+	<div class="grid grid-cols-12 max-w-7xl w-full">
+
+		<div class="xl:col-span-3 md:col-span-4 col-span-6">
+			
+			${{
+
+				// customize PAGINATION component (included below)
+				$.requestStore['PAGINATION_PARAMETER_PAGE']     = 'page';
+				$.requestStore['PAGINATION_PARAMETER_PAGESIZE'] = 'pageSize';
+
+				$.requestStore['PAGINATION_MAX_PAGESIZE']       = 25;
+				$.requestStore['PAGINATION_DEFAULT_PAGESIZE']   = 10;
+
+				$.requestStore['PAGINATION_MAX_ITEMS']          = $.find('Actor').length;
+				$.requestStore['PAGINATION_PAGES_AROUND']       = 1;
+			
+				// uncomment the next line if pagination should remove the detail object (if an actor was selected before)
+				//$.requestStore['PAGINATION_PAGE_PATH']          = '/' + $.page.name + '?';
+
+				// let pagination take care of setting the correct page/pagesize (including sanity checks)
+				$.include('PAGINATION_CONFIG');
+			}}
+			
+			<!-- placed awkwardly above the paginated elements to show that it can be done ;) -->
+			${include('PAGINATION_MARKUP')}
+			
+			${{
+				// get the results so we can query the database
+				let page     = $.requestStore['PAGINATION_CUR_PAGE'];
+				let pageSize = $.requestStore['PAGINATION_CUR_PAGESIZE'];
+
+				let actors = $.find('Actor', $.predicate.sort('name'), $.predicate.page(page, pageSize));
+
+				$.include_child('ACTOR_LINK', actors, 'actor');
+			}}
+			
+		</div>
+
+		<div class="xl:col-span-9 md:col-span-8 col-span-6">
+			${include('ACTOR_DETAILS')}
+		</div>
+	</div>
+
+</div>

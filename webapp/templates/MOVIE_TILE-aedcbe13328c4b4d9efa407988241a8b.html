@@ -1,0 +1,12 @@
+<div class="flex flex-col bg-gray-200 rounded-lg p-3 m-1 sm:p-4 sm:m-2">
+	<div class="h-40 bg-gray-400 rounded-lg">
+		<img src="${movie.posterUrl}" class="h-full w-full object-scale-down">
+	</div>
+	<div class="flex flex-col items-start mt-4">
+		<div class="flex w-full">
+			<h4 class="text-xl font-semibold flex-grow">${movie.name}</h4>
+			<span>${movie.imdbRating}</span>
+		</div>
+		<p class="text-sm break-all sm:break-normal">${movie.storyline}</p>
+	</div>
+</div>

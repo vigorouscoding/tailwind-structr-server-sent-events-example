@@ -1,0 +1,184 @@
+{
+  "14823695054f4e97996dc11a6b6324c2": {
+    "contentType": "text/html",
+    "id": "14823695054f4e97996dc11a6b6324c2",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "196c4430e9664f218fe88a8a4a686e8a": {
+    "contentType": "text/html",
+    "id": "196c4430e9664f218fe88a8a4a686e8a",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "913f2f0ad622403e9239063edc421dc8": {
+    "contentType": "text/html",
+    "id": "913f2f0ad622403e9239063edc421dc8",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "ACTOR_DETAILS-f100ccb563934ab18bb2ddfa404d9688": {
+    "contentType": "text/html",
+    "id": "f100ccb563934ab18bb2ddfa404d9688",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "ACTOR_LINK-34fadc066634488f92d44ada5178015c": {
+    "contentType": "text/html",
+    "id": "34fadc066634488f92d44ada5178015c",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "ACTOR_LINK-a0a2496c56814a44bde992f61caac775": {
+    "contentType": "text/html",
+    "id": "a0a2496c56814a44bde992f61caac775",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "DATA_IS_MISSING-bf71a4b936da4a4a9565a1c566e7b2dd": {
+    "contentType": "text/html",
+    "id": "bf71a4b936da4a4a9565a1c566e7b2dd",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "DELETE_ACTION-3d1e0094e5ef45a68021c392c62295cd": {
+    "contentType": "text/html",
+    "id": "3d1e0094e5ef45a68021c392c62295cd",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "GENRE_LINK-9788f080ba704146a5154148ccc34501": {
+    "contentType": "text/html",
+    "id": "9788f080ba704146a5154148ccc34501",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "GENRE_MOVIES-e4a6f19b6d3849dab027cf976ec3dceb": {
+    "contentType": "text/html",
+    "id": "e4a6f19b6d3849dab027cf976ec3dceb",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "GO_TO_DATA-ea50cc034e7d42239755ae0e5f29851d": {
+    "contentType": "text/html",
+    "id": "ea50cc034e7d42239755ae0e5f29851d",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "IMPORT_ACTION-c7aaaa17a5f84da1b90dbdef6c65b75e": {
+    "contentType": "text/html",
+    "id": "c7aaaa17a5f84da1b90dbdef6c65b75e",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "IMPORT_NOT_POSSIBLE-577aa75157ba44a5979cf41eb2eea684": {
+    "contentType": "text/html",
+    "id": "577aa75157ba44a5979cf41eb2eea684",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "INFOS_CONTENT-f320586f2125434f853f700bbac5c040": {
+    "contentType": "text/html",
+    "id": "f320586f2125434f853f700bbac5c040",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "MOVIE_TILE-aedcbe13328c4b4d9efa407988241a8b": {
+    "contentType": "text/html",
+    "id": "aedcbe13328c4b4d9efa407988241a8b",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "Main Menu Left-c0530ee1f18542cdbaf3529bd5401ded": {
+    "contentType": "text/html",
+    "id": "c0530ee1f18542cdbaf3529bd5401ded",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "Main Page Template-a6550739bf6c4d00b73ee76ae0394ed6": {
+    "contentType": "text/html",
+    "id": "a6550739bf6c4d00b73ee76ae0394ed6",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "PAGINATION_CONFIG-0ff0fe236d2f45de861683846e325dda": {
+    "contentType": "text/javascript",
+    "id": "0ff0fe236d2f45de861683846e325dda",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "PAGINATION_ITEM-e376de89ecbf491ea43543b571137921": {
+    "contentType": "text/html",
+    "id": "e376de89ecbf491ea43543b571137921",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "page-content-1753cf797e584b74b1f6952b15eb9f29": {
+    "contentType": "text/html",
+    "id": "1753cf797e584b74b1f6952b15eb9f29",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "page-content-2baa838ae53f472f87d8bcde787b046a": {
+    "contentType": "text/html",
+    "id": "2baa838ae53f472f87d8bcde787b046a",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "page-content-4007953e96b44dbf8d35c16e94a7a0e1": {
+    "contentType": "text/html",
+    "id": "4007953e96b44dbf8d35c16e94a7a0e1",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "page-content-4c16d4e45b3c4190adbddb6a1b077689": {
+    "contentType": "text/html",
+    "id": "4c16d4e45b3c4190adbddb6a1b077689",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "page-content-a3839661579e423f84817ddcd9eed1b8": {
+    "contentType": "text/html",
+    "id": "a3839661579e423f84817ddcd9eed1b8",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "page-content-af5d8e7769ed47298fcd6c49d1dff5ed": {
+    "contentType": "text/html",
+    "id": "af5d8e7769ed47298fcd6c49d1dff5ed",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "page-content-bab5a7ee68144e8f9c287bbc34b7012d": {
+    "contentType": "text/html",
+    "id": "bab5a7ee68144e8f9c287bbc34b7012d",
+    "shared": "false",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  }
+}

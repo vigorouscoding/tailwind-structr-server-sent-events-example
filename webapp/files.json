@@ -1,0 +1,93 @@
+{
+  "/css": {
+    "grantees": [],
+    "id": "4de9f0b5d83942ee9b21500c95484675",
+    "includeInFrontendExport": true,
+    "owner": null,
+    "type": "Folder",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "/css/custom.css": {
+    "basicAuthRealm": null,
+    "cacheForSeconds": null,
+    "contentType": "text/css",
+    "dontCache": false,
+    "enableBasicAuth": false,
+    "grantees": [],
+    "id": "af7099c271bf490e83a65cd9e643c6b3",
+    "includeInFrontendExport": false,
+    "isTemplate": false,
+    "owner": null,
+    "type": "File",
+    "useAsJavascriptLibrary": false,
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "/css/tailwind.2.0.3.css": {
+    "basicAuthRealm": null,
+    "cacheForSeconds": null,
+    "contentType": "text/css",
+    "dontCache": false,
+    "enableBasicAuth": false,
+    "grantees": [],
+    "id": "16dd6a2b0a0f422893eb3e96305eb075",
+    "includeInFrontendExport": false,
+    "isTemplate": false,
+    "owner": null,
+    "type": "File",
+    "useAsJavascriptLibrary": false,
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "/data": {
+    "grantees": [],
+    "id": "43aee78229094e5980d4ab1c1781a547",
+    "includeInFrontendExport": true,
+    "owner": null,
+    "type": "Folder",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "/data/top-rated-movies-01.json": {
+    "basicAuthRealm": null,
+    "cacheForSeconds": null,
+    "contentType": "application/json",
+    "dontCache": false,
+    "enableBasicAuth": false,
+    "grantees": [],
+    "id": "058ff1b8853b4afaa2cda64db330f9d9",
+    "includeInFrontendExport": false,
+    "isTemplate": false,
+    "owner": null,
+    "type": "File",
+    "useAsJavascriptLibrary": false,
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "/js": {
+    "grantees": [],
+    "id": "83db4fb3f4e84befae64a228b98060d5",
+    "includeInFrontendExport": true,
+    "owner": null,
+    "type": "Folder",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "/js/global-scripts.js": {
+    "basicAuthRealm": null,
+    "cacheForSeconds": null,
+    "contentType": "application/javascript",
+    "dontCache": false,
+    "enableBasicAuth": false,
+    "grantees": [],
+    "id": "bf89f54035dd4b98b4c0fad2e08867f0",
+    "includeInFrontendExport": false,
+    "isTemplate": false,
+    "owner": null,
+    "type": "File",
+    "useAsJavascriptLibrary": false,
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  }
+}

@@ -1,0 +1,16 @@
+<div class="prose max-w-full">
+	<p>${
+		is(
+			eq(status_code, 404),
+			(
+				if (
+					empty(me),
+					print('You are not logged in - log in via <a href="/structr/">backend</a>... showing infos page while we wait...'),
+					print('This resource does not exist... showing infos page while we wait...')
+				),
+				include('INFOS_CONTENT')
+			)
+		)
+	}</p>
+
+</div>

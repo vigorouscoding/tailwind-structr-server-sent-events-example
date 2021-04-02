@@ -1,0 +1,66 @@
+<div class="bg-white rounded mt-4 shadow-lg p-8">
+	<div class="flex items-end justify-between">
+		<span class="font-semibold">Would you like to run the import?</span>
+	</div>
+
+	<div class="flex flex-col px-8 pt-4">
+		<button id="import-start-button" class="flex items-center justify-center bg-blue-600 text-sm font-medium w-full h-10 rounded text-blue-50 hover:bg-blue-700">Start Import</button>
+	</div>
+
+	<div class="mt-12">
+		<h1 class="">Import Progress</h1>
+		<div class="h-3 relative w-full rounded-full overflow-hidden">
+			<div class="w-full h-full bg-gray-200 absolute"></div>
+			<div id="import-status-bar" class="h-full bg-green-500 relative w-0"></div>
+		</div>
+
+		<div id="import-status-message" class="relative w-full"></div>
+	</div>
+
+	<div id="reload-page" class="hidden mt-12">
+		<a href="javascript:location.reload();" class="text-blue-500 hover:text-blue-300">Reload page</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	let startButton = document.getElementById('import-start-button');
+	let progressBar = document.getElementById('import-status-bar');
+	let progressMessage = document.getElementById('import-status-message');
+
+	let disableStartButton = () => {
+		startButton.disabled = 'disabled';
+		startButton.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+		startButton.classList.add('cursor-not-allowed', 'bg-gray-600');
+	};
+	
+	let source = new EventSource("/structr/EventSource", { withCredentials: true });
+
+	source.onerror = (e) => {
+		progressMessage.textContent = 'EventSourceServlet is not active - please activate and retry.';
+		disableDeleteButton();
+	};
+	
+	source.addEventListener('importProgress', function(event) {
+
+		disableStartButton();
+
+		let data = JSON.parse(event.data);
+
+		progressBar.style.width     = data.progress + "%";
+		progressMessage.textContent = data.message;
+
+		if (data.progress === 100) {
+			document.getElementById('reload-page').classList.remove('hidden');
+		}
+	});
+
+	startButton.addEventListener('click', async (e) => {
+
+		disableStartButton();
+
+		await fetch ('/structr/rest/importMovieData', {
+			method: 'POST',
+		});
+	});
+</script>

@@ -1,0 +1,65 @@
+{
+	let dataFile = $.first($.find('File', 'name', 'top-rated-movies-01.json'));
+
+	if (!$.empty(dataFile)) {
+
+		let json = $.get_content(dataFile);
+
+		let data = JSON.parse(json);
+		
+		let count = data.length;
+		let curCount = 0;
+
+		for (let movie of data) {
+
+			let genres = movie.genres.map((g) => {
+				return $.getOrCreate('Genre', {
+					name: g,
+					visibleToPublicUsers: true,
+					visibleToAuthenticatedUsers: true
+				});
+			});
+
+			let actors = movie.actors.map((a) => {
+				return $.getOrCreate('Actor', {
+					name: a,
+					visibleToPublicUsers: true,
+					visibleToAuthenticatedUsers: true
+				});
+			});
+
+			let movieData = {
+				name: $.empty(movie.originalTitle) ? movie.title : movie.originalTitle,
+				releaseDate: movie.releaseDate,
+				imdbRating: movie.imdbRating,
+				posterUrl: movie.posterurl,
+				storyline: movie.storyline,
+				genres: genres,
+				actors: actors,
+				visibleToPublicUsers: true,
+				visibleToAuthenticatedUsers: true
+			};
+
+			$.create('Movie', movieData);
+			
+			curCount++;
+			
+			let broadcastData = {
+				progress: (curCount / count) * 100,
+				message: 'Imported ' + curCount + ' / ' + count + ' movies'
+			};
+			
+			$.broadcastEvent('importProgress', JSON.stringify(broadcastData));
+			
+			// wait for 100ms so it is not too fast
+			// $.sleep(100);
+		}
+
+		let broadcastData = {
+			progress: 100,
+			message: 'Import finished'
+		};
+
+		$.broadcastEvent('importProgress', JSON.stringify(broadcastData));
+	}
+}

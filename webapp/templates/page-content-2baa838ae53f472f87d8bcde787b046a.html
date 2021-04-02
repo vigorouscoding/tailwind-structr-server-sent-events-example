@@ -1,0 +1,18 @@
+<h1 class="text-3xl mb-6">Actors</h1>
+
+${include('DATA_CHECK')}
+
+<div class="flex justify-center">
+
+	<div class="grid grid-cols-12 max-w-7xl w-full">
+
+		<div class="xl:col-span-3 md:col-span-4 col-span-6">
+			${include_child('ACTOR_LINK')}
+		</div>
+
+		<div class="xl:col-span-9 md:col-span-8 col-span-6">
+			${include('ACTOR_DETAILS')}
+		</div>
+	</div>
+		
+</div>

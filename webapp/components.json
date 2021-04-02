@@ -1,0 +1,47 @@
+{
+  "ACTOR_DETAILS-f100ccb563934ab18bb2ddfa404d9688": {
+    "contentType": "text/html",
+    "id": "f100ccb563934ab18bb2ddfa404d9688",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "DATA_CHECK-fb4359d749134f57bed076c1327925bf": {
+    "id": "fb4359d749134f57bed076c1327925bf",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "MOVIE_TILE-aedcbe13328c4b4d9efa407988241a8b": {
+    "contentType": "text/html",
+    "id": "aedcbe13328c4b4d9efa407988241a8b",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": false,
+    "visibleToPublicUsers": false
+  },
+  "Main Menu Left-c0530ee1f18542cdbaf3529bd5401ded": {
+    "contentType": "text/html",
+    "id": "c0530ee1f18542cdbaf3529bd5401ded",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "Main Page Template-a6550739bf6c4d00b73ee76ae0394ed6": {
+    "contentType": "text/html",
+    "id": "a6550739bf6c4d00b73ee76ae0394ed6",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "PAGINATION_CONFIG-0ff0fe236d2f45de861683846e325dda": {
+    "contentType": "text/javascript",
+    "id": "0ff0fe236d2f45de861683846e325dda",
+    "shared": "true",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  },
+  "PAGINATION_MARKUP-f2ffbf88d2b44533b8f210d8fcc2b9d2": {
+    "id": "f2ffbf88d2b44533b8f210d8fcc2b9d2",
+    "visibleToAuthenticatedUsers": true,
+    "visibleToPublicUsers": true
+  }
+}

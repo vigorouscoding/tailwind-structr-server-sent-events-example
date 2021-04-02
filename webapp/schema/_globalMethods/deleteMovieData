@@ -1,0 +1,12 @@
+{
+	$.broadcastEvent('deleteProgress', JSON.stringify({ progress: 0, message: 'Deleting Actors'}));
+	$.delete($.find('Actor'));
+
+	$.broadcastEvent('deleteProgress', JSON.stringify({ progress: 33, message: 'Deleting Genres'}));
+	$.delete($.find('Genre'));
+
+	$.broadcastEvent('deleteProgress', JSON.stringify({ progress: 66, message: 'Deleting Movies'}));
+	$.delete($.find('Movie'));
+	
+	$.broadcastEvent('deleteProgress', JSON.stringify({ progress: 100, message: 'Deleted all data'}));
+}

@@ -1,0 +1,13 @@
+<h1 class="text-3xl mb-6">Data</h1>
+
+${
+	if(
+		or(
+			eq(size(find('Actor')), 0),
+			eq(size(find('Movie')), 0),
+			eq(size(find('Genre')), 0)
+		),
+		include_child('IMPORT_ACTION'),
+		include_child('DELETE_ACTION')
+	)
+}
